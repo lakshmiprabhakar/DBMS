@@ -1,0 +1,255 @@
+Script started on Thursday 16 March 2023 02:04:18 PM IST
+]0;root@ccn40-Vostro-3470: /home/chn22mc030root@ccn40-Vostro-3470:/home/chn22mc030# mysql -u chn22mc30 -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 5.7.33-0ubuntu0.16.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> CREATE DATABASE table;[29G[K[28G[K[27G[K[26G[K[25G[K[24G[K[23G[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[13G[K[12G[K[11G[K[10G[K[9G[K[8G[Kahow [12G[11G[K[10G[K[9G[K[8G[Kshow databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.04 sec)
+
+mysql> CREATE DATABASE college;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use college
+Database changed
+mysql> create table student()[29GR)[30GO)[31GL)[32GL)[33GL)[33G)[K[33G )[33G)[K[32G)[K[31G)[K[30G)[K[30Go)[31Gl)[32Gl)[33G )[34GN)[35Go)[36G:)[37G )[38Gi)[39Gn)[40Gt)[41G,)[42GN)[43Ga)[44Gm)[45Ge)[46G )[47Gv)[48Ga)[49Gr)[50Gc)[51Gh)[52Ga)[53Gr)[54G()[56G)[55G1))[56G0)))[58G,)[59Gd)[60Go)[61Gb)[62G )[63Gd)[64Ga)[65Gt)[66Ge)[67G,)[68Ga)[69Gd)[70Gd)[71Gr)[72Ge)[73Gs)[74Gs)[75G )[76Gv)[77Ga)[78Gr)[79Gc)[80Gh)[81Ga)[82Gr)[83G()[85G)[84G1))[85G0))[86G0))[33G[1@_  [34G[PN[34G[1@_N[34G[PNNo: int,Name varchar(10),dob [62G[1@_  [63G[Pddate,address varchar(100)[88G.)[88G)[K[88G,)[89Gp)[90Gh)[91Go)[92Gn)[93Ge)[94G_)[95Gn)[96Go)[97G )[98Gi)[99Gn)[100Gt)[101G,)[102Gb)[103Gl)[104Go)[105Go)[106Gd)[107G )[108Gv)[109Ga)[110Gr)[111Gc)[112Gh)[113Ga)[114Gr)[115G()[117G)[116G2))[117G0))));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': int,Name varchar(10),dob_date,address varchar(100),phone_no int,blood varchar(' at line 1
+mysql> [8Gcreate table student(Roll_No: int,Name varchar(10),dob_date,address varchar(100),phone_no int,blood varchar(20));[8Guse college[K[8GCREATE DATABASE college;[8Gshow databases;[K[8Gflush privileges;[8GGRANT ALL PRIVILEGES ON *.* TO'chn22mc30'@'localhost'  with GRANT option;[8Gflush privileges;[K[8GGRANT ALL PRIVILEGES ON *.* TO 'chn22mc30' with GRANT option;[8Gclear[K[8Gexit[K[8Gflush privileges;[8GGRANT ALL PRIVILEGES ON *.* TO 'mca2230'@localhost with GRANT option;[77G[77G[8Gflush privileges;[K[8Gexit[K[8Gclear[8GGRANT ALL PRIVILEGES ON *.* TO 'chn22mc30' with GRANT option;[8Gflush privileges;[K[8GGRANT ALL PRIVILEGES ON *.* TO'chn22mc30'@'localhost'  with GRANT option;[8Gflush privileges;[K[8Gshow databases;[K[8GCREATE DATABASE college;[8Guse college[K[8Gcreate table student(Roll_No: int,Name varchar(10),dob_date,address varchar(100),phone_no int,blood varchar(20));[35G[P:[35G[1@0::[36G[P  int,Name varchar(10),dob_date,address varchar(100),phone_no int,bloo[34G[P0[33G[P00[33G[P [33G[1@_ [34G[1@n [35G[1@o  int,Name varchar(10),dob_date,address varchar(100),phone_no int,blood varchar(20));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'address varchar(100),phone_no int,blood varchar(20))' at line 1
+mysql> show[11G[K[10G[K[9G[K[8G[K[8Gcreate table student(Roll_no int,Name varchar(10),dob_date,address varchar(100),phone_no int,blood varchar(20));[60G[P_[60G[1@b__[61G[Pd[61G[1@ ddate,address varchar(100),phone_no int,blood varchar(20));
+Query OK, 0 rows affected (0.30 sec)
+
+mysql> show columns [20G[19G[K[18G[K[17G[Kms[18G[Kns student;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'student' at line 1
+mysql> use college
+Database changed
+mysql> [8Guse college[8Gshow columns student;[8Gcreate table student(Roll_no int,Name varchar(10),dob date,address varchar(100),phone_no int,blood varchar(20));[8Gshow columns student;[K[21G[1@ s[21G[1@c [22G[1@o [23G[1@l [24G[1@l [25G[1@e [26G[1@g [27G[1@e [28G[1@.  [29G[Psstudent;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'college.student' at line 1
+mysql> [8Gshow columns college.student;[21G[1@ c[21G[1@f [22G[1@r [23G[1@o [24G[1@m  college.student;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| Roll_no  | int(11)      | YES  |     | NULL    |       |
+| Name     | varchar(10)  | YES  |     | NULL    |       |
+| dob      | date         | YES  |     | NULL    |       |
+| address  | varchar(100) | YES  |     | NULL    |       |
+| phone_no | int(11)      | YES  |     | NULL    |       |
+| blood    | varchar(20)  | YES  |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+6 rows in set (0.01 sec)
+
+mysql> alter table student drop blodd;[38G[K[37G[K[36G[K0[36G[Kod;
+Query OK, 0 rows affected (0.49 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> show columns fe[22G[Krom student;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| Roll_no  | int(11)      | YES  |     | NULL    |       |
+| Name     | varchar(10)  | YES  |     | NULL    |       |
+| dob      | date         | YES  |     | NULL    |       |
+| address  | varchar(100) | YES  |     | NULL    |       |
+| phone_no | int(11)      | YES  |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> alter table student add()[32Ga)[33Ga)[34Gd)[35Gg)[35G)[K[35Gh)[36Ga)[37Gr)[38G_)[39Gn)[40Go)[41G )[42Gi)[43Gn)[44Gt));
+Query OK, 0 rows affected (0.51 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> [8Galter table student add(aadhar_no int);[8Gshow columns from student;[K
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| Roll_no   | int(11)      | YES  |     | NULL    |       |
+| Name      | varchar(10)  | YES  |     | NULL    |       |
+| dob       | date         | YES  |     | NULL    |       |
+| address   | varchar(100) | YES  |     | NULL    |       |
+| phone_no  | int(11)      | YES  |     | NULL    |       |
+| aadhar_no | int(11)      | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> alter table student modifu[33G[Ky phone_no varchar()[52G1)[53G0)));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+mysql> [8Galter table student modify phone_no varchar(10));[8Gshow columns from student;[K
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| Roll_no   | int(11)      | YES  |     | NULL    |       |
+| Name      | varchar(10)  | YES  |     | NULL    |       |
+| dob       | date         | YES  |     | NULL    |       |
+| address   | varchar(100) | YES  |     | NULL    |       |
+| phone_no  | int(11)      | YES  |     | NULL    |       |
+| aadhar_no | int(11)      | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> alter table student modigy[33G[K[32G[Kfy phone_no varchar()[52G1)[53G0));
+Query OK, 0 rows affected (0.67 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> [8Galter table student modify phone_no varchar(10);[8Gshow columns from student;[K
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| Roll_no   | int(11)      | YES  |     | NULL    |       |
+| Name      | varchar(10)  | YES  |     | NULL    |       |
+| dob       | date         | YES  |     | NULL    |       |
+| address   | varchar(100) | YES  |     | NULL    |       |
+| phone_no  | varchar(10)  | YES  |     | NULL    |       |
+| aadhar_no | int(11)      | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> drop table student;
+Query OK, 0 rows affected (0.19 sec)
+
+mysql> drop databas [20Ge college;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.00 sec)
+
+mysql> CREATE DATABASE org;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use org;
+Database changed
+mysql> create tabk[18G[Kle employee()[30Ge)[31Gm)[32Gp)[33G_)[34Gn)[35Go)[36G )[37Gi)[38Gn)[39Gt)[40G,)[41Ge)[42Gm)[43Gp)[44G_)[45Gn)[46Ga)[47Gm)[48Ge)[49G )[50Gv)[51Ga)[52Gr)[53Gc)[54Gh)[55Ga)[56Gr)[57G()[59G)[58G2))[59G0)))[61G,)[62Gd)[63Go)[64Gb)[65G )[66Gd)[67Ga)[68Gt)[69Ge)[70G,)[71Ga)[72Gd)[73Gd)[74Gr)[75Ge)[76Gs)[77Gs)[78G )[79Gv)[80Ga)[81Gr)[82Gc)[83Gh)[84Ga)[85Gr)[86G()[88G)[87G1))[88G0))[89G0)))[91G,)[92Gp)[93Gh)[94Go)[95Gn)[96Ge)[97G_)[98Gn)[99Go)[100G )[101Gi)[102Gn)[103Gt)[104G,)[105Gd)[106Gp)[107Gt)[108G_)[109Gn)[110Go)[111G )[112Gv)[113Ga)[114Gr)[115Gc)[116Gh)[117Ga)[118Gr)[119G()[121G)[120G1))[121G0)))[123G,)[124Gs)[125Ga)[126Gl)[127Ga)[128Gr)[129Gy)[130G )[131Gi)[132Gn)[133Gt));
+Query OK, 0 rows affected (0.26 sec)
+
+mysql> create table Department()[32Gd)[33Gp)[34Gt)[35G_)[36Gn)[37Go)[38G )[39Gi)[40Gn)[41Gt)[42G,)[43Gd)[44Gp)[45Gt)[46G_)[47Gn)[48Ga)[49Gm)[50Ge)[51G )[52Gv)[53Ga)[54Gr)[55Gc)[56Gh)[57Ga)[58Gr)[59G()[61G)[60G2))[61G0)))[63G,)[64Gl)[65Go)[66Gc)[67Ga)[68Gt)[69Gi)[70Go)[71Gn)[72G )[73Gb)[73G)[K[73Gv)[74Ga)[75Gr)[76Gc)[77Gh)[78Ga)[79Gr)[80G()[82G)[81G5))[82G0)))[8G[K[8G[8Gcreate table employee(emp_no int,emp_name varchar(20),dob date,address varchar(100),phone_no int,dpt_no varchar(10),salary int);[8Guse org;[K[8G[12@CREATE DATABASE[28G[8Gshow databases;[K[8Gdrop database college;[13Gtable student;[K[8G[7@show columns from[34G[8Galter table student modify phone_no varchar(10);[8Gshow columns from student;[K[8Galter table student modify phone_no varchar(10));[8Gshow columns from student;[K[8Galter table student add(aadhar_no int);[8Gshow columns from student;[K[8Galter table student drop blood;[8Gshow columns from college.student;[21G[5Pc[37G[8Guse college[K[8Gshow columns student;[8Gcreate table student(Roll_no int,Name varchar(10),dob date,address varchar(100),phone_no int,blood varchar(20));[61G_[120G[34G[1@No:[121G[8Guse college[K[8GCREATE DATABASE college;[8Gshow databases;[K[8Gflush privileges;[8GGRANT ALL PRIVILEGES ON *.* TO'chn22mc30'@'localhost'  with GRANT option;[8Gflush privileges;[K[8GGRANT ALL PRIVILEGES ON *.* TO 'chn22mc30' with GRANT option;[8Gflush privileges;[K[8GGRANT ALL PRIVILEGES ON *.* TO'chn22mc30'@'localhost'  with GRANT option;[8Gflush privileges;[K[8Gshow databases;[K[8GCREATE DATABASE college;[8Guse college[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[10G[K[9G[K[8G[Kcreate table department()[32Gd)[33Gp)[34Gt)[35G_)[36Gn)[37Go)[38G )[39Gi)[40Gn)[41Gt)[42G,)[43G )[44Gd)[45Gp)[45G)[K[44G)[K[43G)[K[43Gd)[44Gp)[45Gt)[46G_)[47Gn)[48Ga)[49Gm)[50Ge)[51G )[52Gv)[53Ga)[54Gr)[55Gc)[56Gh)[57Ga)[58Gr)[59G()[61G)[60G2))[61G0))[62G,))[63Gl))[64Go))[65Gc))[66Ga))[67Gt))[68Gu))[68G))[K[68Gi))[69Go))[70Gn))[71G ))[72Gv))[73Ga))[74Gr))[75Gc))[76Gh))[77Ga))[78Gr))[79G())[82G)[80G5)))[81G0))))[84G[K));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'location varchar(50))' at line 1
+mysql> [8Gcreate table department(dpt_no int,dpt_name varchar(20,location varchar(50));0[62G[1@),,location varchar(50));
+Query OK, 0 rows affected (0.25 sec)
+
+mysql> show tables;
++---------------+
+| Tables_in_org |
++---------------+
+| department    |
+| employee      |
++---------------+
+2 rows in set (0.00 sec)
+
+mysql> alter table employee add()[33Gd)[34Ge)[35Gs)[36Gi)[37Gg)[38Gn)[39Ga)[40Gt)[41Gi)[42Go)[43Gn)[44G )[45Gv)[46Ga)[47Gr)[48Gc)[49Gh)[50Ga)[51Gr)[52G()[54G)[53G5))[54G0))));
+Query OK, 0 rows affected (0.42 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> show tables f[20G[K[19G[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G coloumns[20G[K[19G[K[18G[K[17G[K[16G[Kumns g[21G[Kfrom employee;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| emp_no      | int(11)      | YES  |     | NULL    |       |
+| emp_name    | varchar(20)  | YES  |     | NULL    |       |
+| dob         | date         | YES  |     | NULL    |       |
+| address     | varchar(100) | YES  |     | NULL    |       |
+| phone_no    | int(11)      | YES  |     | NULL    |       |
+| dpt_no      | varchar(10)  | YES  |     | NULL    |       |
+| salary      | int(11)      | YES  |     | NULL    |       |
+| designation | varchar(50)  | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+8 rows in set (0.00 sec)
+
+mysql> alter tav[16G[Kble department drop[34G[K[33G[K[32G[K[31G[K[30G[29G[K[28G[K[27G[K[26G[K[25G[K[24G[K[23G[K[22G[K[21G[K[20G[K[19G[18G[K[17G[K[16G[K[15G[K[14G[K[13G[12G[K[11G[K[10G[K[9G[K[8G[K[8Gshow columns from employee;[34G[K[33G[K[32G[K[31G[K[30G[K[29G[K[28G[K[27G[K[26G[Kdepartment;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| dpt_no   | int(11)     | YES  |     | NULL    |       |
+| dpt_name | varchar(20) | YES  |     | NULL    |       |
+| location | varchar(50) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> fro~[11G[K[10G[K[9G[K[8G[Kalter table department drop location;
+Query OK, 0 rows affected (0.47 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> [8Galter table department drop location;[8Gshow columns from department;[K
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| dpt_no   | int(11)     | YES  |     | NULL    |       |
+| dpt_name | varchar(20) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> desc employee;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| emp_no      | int(11)      | YES  |     | NULL    |       |
+| emp_name    | varchar(20)  | YES  |     | NULL    |       |
+| dob         | date         | YES  |     | NULL    |       |
+| address     | varchar(100) | YES  |     | NULL    |       |
+| phone_no    | int(11)      | YES  |     | NULL    |       |
+| dpt_no      | varchar(10)  | YES  |     | NULL    |       |
+| salary      | int(11)      | YES  |     | NULL    |       |
+| designation | varchar(50)  | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+8 rows in set (0.00 sec)
+
+mysql> create [14G[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[8Gdesc employee;[8Gshow columns from department;[8Galter table department drop location;[8Gshow columns from department;[K[26Gemployee;[K[8Galter table employee add(designation varchar(50));[8Gshow tables;[K[8Gcreate table department(dpt_no int,dpt_name varchar(20),location varchar(50));[62G[P,[85G[84G[K;nt[30G[P([29G[P([28G[P([27G[P([26G[P([25G[P([24G[P([23G[P([22G[P([21G[P([21G[1@p([22G[1@e([23G[1@r([24G[1@s([25G[1@o([26G[1@n((dpt_no int,dpt_name varchar(20,location varchar(50[77G));[K[76G));[K[75G));[K[74G));[K[73G));[K[72G));[K[71G));[K[70G));[K[69G));[K[68G));[K[67G));[K[66G));[K[65G));[K[64G));[K[63G));[K[62G));[K[61G));[K[60G));[K[59G));[K[58G));[K[57G));[K[56G));[K[55G));[K[54G));[K[53G));[K[52G));[K[51G));[K[50G));[K[49G));[K[48G));[K[47G));[K[46G));[K[45G));[K[44G));[K[43G));[K[42G));[K[41G));[K[40G));[K[39G));[K[38G));[K[37G));[K[36G));[K[35G));[K[34G));[K[33G));[K[32G));[K[31G));[K[30G));[K[29G));[K[28G));[K)[29G;[K[28Gp);[29Ge);[30Gr);[31Gs);[32Go);[33Gn);[34G_);[35Gi);[36Gd);[37G );[38Gn);[39Go);[40Gt);[41G );[41G);[K[41G );[42GN);[43GU);[44GL);[45GL);[46G );[47Gp);[48Gr);[49Gi);[50Gm);[51Ga);[52Gr);[53Gy);[54G );[55Gk);[56Ge);[57Gy);[58G,);[59Gm);[59G);[K[59Gn);[60Ga);[61Gm);[62Ge);[63G );[64Gn);[65Go);[66Gt);[67G );[68GN);[69GU);[70GL);[71GL);[72G );[73Gu);[74Gn);[75Gi);[76Gq);[77Gu);[78Gw);[78G);[K[78Ge);[79G,);[80Ga);[81Ga);[81G);[K[80G);[K[79G);[K[78G);[K[77G);[K[76G);[K[75G);[K[74G);[K[73G);[K[72G);[K[72G,);[73Ga);[74Ga);[75Gd);[76Gh);[77Ga);[78Gr);[79G );[80Gn);[81Go);[82Gt);[83G );[84GN);[85GI);[85G);[K[85GU);[86GL);[87GL);[88G );[89Gu);[90Gn);[91Gi);[92Gq);[93Gu);[94Ge);[95G,);[96Ga);[97Gg);[98Ge);[99G );[100Gc);[101Gh);[102Ge);[103Gc);[104Gk);k[105G>);[106G1);[107G8);[38G[1@ n[38G[1@i [39G[1@n [40G[1@t [42G[1@ n not[45G[P [44G[P [43G[P [43G[PN[42G[PN NUL[45G[P [43G[PL[42G[PL[41G[PLL[41G[P [42G[1@ p[42G[1@n [43G[1@o [44G[1@t [46G[1@ p[46G[1@n [47G[1@u [48G[1@l [49G[1@l [49G[P [48G[P [47G[P [46G[P [46G[Pp[44G[P [43G[P [42G[P [42G[1@N [43G[1@O [44G[1@R [44G[P [44G[1@T [46G[1@ p[46G[1@N [47G[1@U [48G[1@L [49G[1@L [51G[1@ p[51G[Pp primary [57G[P [57G[1@Y [58G[1@_  [59G[Pk[58G[Pk[57G[Pk[57G[1@yk[58G[1@_kkey,name no[69G[Pt[68G[Ptt[68G[P [68G[1@n [69G[1@o [69G[P [68G[P [68G[1@N [69G[1@O [70G[1@T [72G[1@ N[72G[PN NULL[57G[P_[57G[1@y_[58G[1@ _[58G[P__k[58G[Pk[57G[1@ y[57G[Pyy[58G[1@ k[49G[P L[48G[P [47G[P [46G[P [46G[Pp[44G[P [43G[P [42G[P [42G[1@n [43G[1@o [44G[1@t [46G[1@ p[46G[1@n [47G[1@u [48G[1@l [49G[1@l [51G[1@ p primary key,name NOT NULL[76G[P,[75G[P,[74G[P,[73G[P,[72G[P,[71G[P,[70G[P,[69G[P,[68G[P,[68G[1@ ,[69G[1@n,[70G[1@o,[71G[1@t,[72G[1@ ,[73G[1@n,[74G[1@u,[75G[1@l,[76G[1@l,[77G[1@ ,[77G[P,[69G[1@ n[69G[1@v [70G[1@a [71G[1@r [72G[1@c [73G[1@h [74G[1@a [75G[1@r [76G[1@( [77G[1@) [77G[1@2)[78G[1@0)) not null,aadhar not NULL unique,age chec[120G[Pkk>1[122G8);[K[121G8);[K[120G8);[K[119G8);[K[118G8);[K[117G8);[K[116G8);[K[115G8);[K[114G8);[K[113G8);[K[112G8);[K[111G8);[K[110G8);[K[109G8);[K[108G8);[K[107G8);[K[106G8);[K[105G8);[K[104G8);[K[103G8);[K[102G8);[K[101G8);[K[100G8);[K[99G8);[K[98G8);[K[97G8);[K[96G8);[K[95G8);[K[94G8);[K[93G8);[K[92G8);[K[91G8);[K[90G8);[K8[90G);[K[90Ga);[91Gg);[92Ge);[93G );[94Gi);[95Gn);[96Gt););
+Query OK, 0 rows affected (0.39 sec)
+
+mysql> show tables;
++---------------+
+| Tables_in_org |
++---------------+
+| department    |
+| employee      |
+| person        |
++---------------+
+3 rows in set (0.00 sec)
+
+mysql> desc person;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| person_id | int(11)     | NO   | PRI | NULL    |       |
+| name      | varchar(20) | NO   |     | NULL    |       |
+| age       | int(11)     | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> alter table person add aadhar int not null unique;
+Query OK, 0 rows affected (0.53 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc person
+    -> desc person;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc person' at line 2
+mysql> desc person;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| person_id | int(11)     | NO   | PRI | NULL    |       |
+| name      | varchar(20) | NO   |     | NULL    |       |
+| age       | int(11)     | YES  |     | NUL

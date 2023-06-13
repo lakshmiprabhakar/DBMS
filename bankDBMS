@@ -1,0 +1,67 @@
+mysql> create database bank;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use bank;
+Database changed
+mysql> create table account(accno varchar(20),cid int,bid int,city varchar(20));
+Query OK, 0 rows affected (0.42 sec)
+
+mysql> show tables;
++----------------+
+| Tables_in_bank |
++----------------+
+| account        |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> select * from account;
+Empty set (0.01 sec)
+
+mysql> show columns from account;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| accno | varchar(20) | YES  |     | NULL    |       |
+| cid   | int(11)     | YES  |     | NULL    |       |
+| bid   | int(11)     | YES  |     | NULL    |       |
+| city  | varchar(20) | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> create table borrower(loanno int,cid varchar(10) ,bid varchar(10) );
+Query OK, 0 rows affected (0.27 sec)
+
+mysql> show columns from borrower;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| loanno | int(11)     | YES  |     | NULL    |       |
+| cid    | varchar(10) | YES  |     | NULL    |       |
+| bid    | varchar(10) | YES  |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+3 rows in set (0.01 sec)
+
+mysql> alter table borrower add(amount int(100));
+Query OK, 0 rows affected (0.53 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> show columns from borrower;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| loanno | int(11)     | YES  |     | NULL    |       |
+| cid    | varchar(10) | YES  |     | NULL    |       |
+| bid    | varchar(10) | YES  |     | NULL    |       |
+| amount | int(100)    | YES  |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+mysql> create table customer(cid varchar(20),cname varchar(20),city varchar(20));
+Query OK, 0 rows affected (0.26 sec)
+mysql> show columns from customer;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| cid   | varchar(20) | YES  |     | NULL    |       |
+| cname | varchar(20) | YES  |     | NULL    |       |
+| city  | varchar(20) | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+
